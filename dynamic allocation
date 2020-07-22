@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main()
+{
+   int n;
+   char *str;
+   printf("Enter size of string:");
+   scanf("%d",&n);
+   str=(char*)malloc(n*sizeof(char));
+   printf("\nEnter String:");
+   scanf("%s",str);
+   printf("\nString Len=%d string=%s",strlen(str),str);
+   
+    return 0;
+}
