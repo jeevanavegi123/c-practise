@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+   int a[10],i,count_po=0,count_ne=0,count_odd=0,count_even=0,zero=0;
+   
+   printf("Enter th elements:");
+   
+   for(i=0;i<10;i++)
+   {
+       scanf("%d",&a[i]);
+   
+   
+       if(a[i]>0)
+          count_po++;
+       
+       else if(a[i]<0)
+           count_ne++;
+       else
+          zero++;
+          
+       if(a[i]%2==0)
+       count_even++;
+       else 
+        count_odd++;
+   }
+       
+       printf("The number of positives are %d\n",count_po);
+       printf("The number of negatives are %d\n",count_ne);
+       printf("The number of zeros are %d\n",zero);
+       printf("The number of even are %d\n",count_even);
+        printf("The number of odd are %d",count_odd);
+   
+
+    return 0;
+}
